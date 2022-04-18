@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Emblema One";                                            /* " " was use with the font-family because is two word*/
+    src: url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.woff"),
+         url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.ttf") ;
+}
+
+body {
+    font-family: Verdana, Geneva, Arial, Tahoma, sans-serif;              /* No "" is use because each of the font-family are single word*/
+    font-size: small;
+    /*background-color:#87CEEB;*/
+}
+
+h1,h2{
+    color:#cc6600;  
+    border-bottom: thin dotted #8883;
+}
+
+h1 {
+    font-family: "Emblema One", sans-serif;
+    font-size: 220%;                                                       /*220% (or 2.2em)of the body font size.*/
+}
+
+h2{
+    font-size: 130%;                                                       /*130% (or 1.3em) of the body font size.*/
+}
+
+blockquote{
+    font-style: italic;
+}

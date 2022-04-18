@@ -1,0 +1,17 @@
+@font-face {
+    font-family:Anton ;
+    src:"\Users\masud\OneDrive - students.boku.ac.at\Data Science\IT Software\Practices\Web_font\Anton-Regular.ttf";
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+   
+}
+h1{
+    font-family: Anton, sans-serif;
+    font-size: 220%;
+}
+h2{
+    font-size: 130%;
+    font-weight: normal;
+}

@@ -1,0 +1,309 @@
+/*
+1. font-family: 5 major family are
+
+ i. san-serif font: have a very clean and readable look
+
+ ii. serif font: have an elegant, traditional look
+
+ iii. Monospace font: like they were typed on a typewriter
+
+ iv. Cursive font: have a playful or stylized feel.   (You’ll sometimes see these fonts used in headings.)
+
+ v. fantasy font: contains stylized decorative fonts.
+
+ Note: Always put a generic font family name at the end, like “serif”, “sans-serif”, “cursive”, or “monospace”.
+
+ Web font is used to deliver a fancy front to user's browser using @font-face rule
+
+ The Web font file is save with the ".woff file extension (web open font format)" 
+
+ for practices, the web font can be store on your computer, but to deliver it to users, it must be host on servers 
+ (just like HTML and CSS), such as Google's which is FREE!!!
+
+
+ WEB FONT AND @FONT-FACE RULE IN CSS
+   i. find a font (either free or lincensed fonts)
+
+   ii. Ensure you have the "format" of all the font you need
+        @font-face rule is standard but the actual format used to store font is yet to be standardize
+        Differnt format type are:
+        a. TrueType fonts: '.ttf'           (alt for older browser)
+        b. OpenType fonts: '.otf'
+        c. Embedded OpenType fonts: '.eot'
+        d. SVG fonts: '.svg'
+        e. Web open font format: '.woff'    (best supported format)
+
+    iii. Place your font files on the Web : Eaxples
+            http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.woff     (modern format)
+            http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.ttf      (old format)
+
+        
+    iv. Add the @font-face property to your CSS: usually on top of css file
+
+  Example of hosting web fonts:
+      i. FontSquirrel (http://www.fontsquirrel.com/)
+      ii. Google Web Font Service (http://www.google.com/webfonts)
+
+
+2. FONT SIZES
+ There are various choice such as px, em, percentages, and keywords.
+         "em", "percentages" : specify a size relative to the parent font size
+
+    i. Use Keyword ("medium or small") to specific the font size for the body
+    ii. Use either percentage or em to specify the font size of other element relative to the body.
+    
+
+3. FONT WEIGHT
+    Use: Control how bold the text looks.
+
+default for bold text: by setting the font weight : "bold"
+to remove boldness: by setting the font weight: "normal"
+
+
+4. FONT STYLE
+  example are:
+  i. italic : slant and extra curl
+  ii. oblique: slant without style
+
+
+
+  *************  COLOR  ***************
+
+ i. Specify color by name:
+    CSS color name are case-insensitive
+
+ii. Specify color in red, green, and blue values
+    using rgb (_%, _%, _%) or by using number from 0 to 255   i,e rgb( 204, 102, 0)
+
+iii. Specify color using hex codes 
+        e.g #cc6600  : i. each two digits represent the RGB color i.e "cc" rep "red", "66" rep "green" while "00" rep the "blue"
+                       ii. each set of two digits represents a number from 0 to 255. 
+    hex codes:
+    They arent bases on 10 digit (0 - 9) rather they are based on 16 digit(0 - F) 
+      0 1 2 3 4 5 6 7 8 9 A(10) B(11) C(12) D(13) E(14) F(15)
+
+      How to convert #cc6600 into 0-255 format
+      Cc (diff letter is used to different for understanding purpose)
+
+      C(front) c(back) = (C=12 x 16 (hex base) + (c=12 the_back_c) = 192C +12c = 204 red
+      
+      66 = 6 *16 + 6 = 96 + 6 = 102 green 
+      
+      00  = 0 blue
+
+iv. Using an online color chart
+        a. This chart is maintained by Wikipedia at http://en.wikipedia.org/wiki/Web_colors.
+        b. You’ll also find many others by searching for “HTML color charts.”
+
+
+***************Basic guideline in selecting font color******************
+
+i. Use color with high contrast for the text and the backgrounf=d to aid readability
+        E.g i. black text on a white background has the highest contrast.
+            ii. Dark hue for the text, and a light hue for the background.
+        
+Note:
+line-height is used to adjust the vertical space between each line 
+
+
+********************Box Model*********************************
+
+1. All element are treated as boxes: paragraphs, headings, blockquotes, lists, and so on.
+
+2. Even inline elements like <em> and links are treated by CSS as boxes.
+
+3. Every box is made up of a content area along with optional padding, border, and margins
+
+            Part of Box Model (Content -- padding-- border -- margine)
+ i. Content Area: This could be a text or Image
+    a. The content area has no whitespace between the content and the edge of this box.
+
+ii. Padding: Any box can have a layer of padding around the content area.
+    a. it can be use to create a visual whitespace between the content and the border of the box.
+    b. Padding seperate the content area from the border.
+
+iii. Border: The border surrounds the padding.
+    a. This can be of various width, color and style
+
+iv. Margin: The margin gives you a way to add space between your element and other elements on the same page.
+    a. It act as padding betweem two box on the same page
+
+
+Note:
+i. Padding and margin cant be given a color or decoration but the can take the color 
+of the background since they are transparent.
+
+ii. One difference between padding and margins is that the element’s background color (or background image) will extend under
+the padding, but not the margin
+
+
+*****************Class and Id******************
+i. Class:This is used when you might want to use a style for more than one element.i.e It can be reused
+
+ii. id: It is used if what you need to style is unique and there is only one on your page
+
+iii. To select an element by its class, you use a . (dot mark) character in front of the class 
+
+iv. Class names should begin with a letter
+
+v. Both id and class names can contain letters and numbers as well as the _ character, but no spaces.
+
+
+***************Id attributes**************
+
+1. The only differences are that the attribute is called id, not class; an element can’t have multiple ids; and you can’t
+    have more than one element on a page with the same id.    
+
+2. To select an element by its id, you use a # (hash mark) character in front of the id 
+
+3. id names can start with a number or a letter.
+
+
+******************<div>*******************
+Uses: lets you divide your page into logical sections or groupings.
+
+It a good practices to label each division with a unique id attribute
+
+Its possible to add a <div> to across similar <div>.
+
+
+**************<span>**********************
+ <span> gives you a way to create a grouping of inline characters and elements
+
+ Margins and padding on inline elements "<em>,<span>,<strong>" work a little differently from block elements—
+
+    if you add a margin on all sides of an inline element, you’ll only see space added to the left and right. 
+    You can add padding to the top and bottom of an inline element, but the padding doesn’t affect the spacing 
+    of the other inline elements around it, so the padding will overlap other inline elements.
+
+    Images are a little different from other inline elements. The width, padding, and margin properties all behave 
+    more like they do for a block element.
+
+
+*********************The a element and its multiple personalities*******************************
+
+
+1. Link State (unvisited, visited and hover} 
+
+Unlike other element the style of <a> element changes depending on its state
+
+    case 1 "unvisted state": The <a> link you have never clicked on before (unvisited link) have a Blue color by default
+
+    case 2 "visited state": The <a> link you have clicked on before (visited link) have a Purple color by default
+    
+    case 3 "Hovering state": If you are hovering over a style, it has another style.
+
+    Different styling base on their state can be achieved using "pseudo-class". 
+
+    example:
+    case 1 can be style with a.link{color: }
+    case 2 can be style with a.visted{color: }
+    case 3 can be style with a.hover{color: }
+
+2. Link State (Focus and Active)
+
+    Focus State: This  occurs when the browser focuses on your link
+        Implication: Some browser allow yu to press your Tab key to rotate through all the link on your page
+                    This also allow keyboard user to have access to a link
+    
+    Active State: This occur when the users first click on a links.
+
+    NB: The order of the styling goes a long way to affect the displace of the <a> links; 
+        Generally: link > visited > hover > focus > active 
+
+*********Pseudo-class********
+ Meaning: It act like class but it isnt a real class. because they (":link", ":visted", ":hover") cannot be find 
+                in the HTML files yet they are use in the style sheet
+
+    Uses: Pseudo-class is used for more than link <a> element; 
+
+
+
+**********************Casscade in Cascading Style Sheets CSS***************************
+
+Recall: You can use nultiple stylesheet to either:
+        i. better organize your styles or 
+        ii. To support different types of devices.
+
+ What does Cascade does?
+
+    The cascade is the way the browser decides, given a bunch of styles in a bunch of stylesheets, which style is going to be used.
+
+    These  bundle of styles comes from: 
+    i. from the author
+    ii. from the user: User can supply the style an element can  used
+    iii. from the browser: in the absent of a particular style from the above two for an element, browser can supply a style
+
+    Rules guiding Cascade: 
+1. Gather all the stylesheet together ("author", "users", and "browser default stylesheet")
+
+2. Find all the declaration that match: looking specifically for the font size property. 
+
+3. Takes all your matches, and sort them. 
+    Note: Once reader have put /important on his CSS property, such properties should come first when sorting.
+
+4. Sort all the declarations by how specific they are. 
+
+5. Sort any conflicting rules in the order they appear in their indiviual stylesheets.
+
+
+*****************************Arranging Elements********************************************
+
+Flow is actually what the browser uses to lay out a page of HTML elements.
+
+1. For block elements; The browser starts at the top of any HTML file and follows the flow of elements from top to bottom, 
+    displaying each element it encounters follow by a linebreak
+
+2. For inline elements: Inline elements are flowed next to each other, horizontally, from top left to bottom right.
+    And the inline elements are flowed from the top left to the bottom right of the element’s content area.
+
+3.
+
+    Case 1: When browser place two(2) inline elements next to each other:
+
+        Especially when these inline element have margin (say 20px and 10px), what the browser does is to display the element 
+        by default then use the margin of both as space betwwen then( i,e the space between the two elememtn will be 30px)
+
+    case 2: When browser place 2 block element on top each other;
+
+        When the browser places two block elements on top of each other, it collapses their margins.
+        Their shared margin is the size of the larger of the two margins.
+        
+        Exanple: the top element’s bottom margin is 10 pixels, and the bottom element’s top margin is 20 pixels. 
+        Then the collapsed margin will be 20 pixels.
+
+4. Float: The property first takes an element float and floats it as far left or right as it can
+    
+    Steps for float creating:
+        i. A requirement for any floating element is that it have a width.
+        ii. Add the float property to it 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

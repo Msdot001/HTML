@@ -1,0 +1,111 @@
+body{
+    font-size: small/1.6em Verdana,Arial, Helvetica,Arial sans-serif;
+    line-height: 1.6em;                                   /* line-height is used to adjust the vertical space between each line */
+                                                        /*The space between line is called “leading” */
+}                                                           
+
+
+h1,h2{
+    color: #007e74;
+}
+
+h1{
+    font-size: 150%;
+}
+
+h2{
+    font-size: 130%;
+}
+
+#guarantee{
+    border-color: white 1px dashed;
+    /*border-width: 1px;
+    border-style: dashed;*/
+
+    background-color: #a7cece;
+    
+    padding: 25px;               /*Without specific means that this will be applicable to all the four side; up down left and right*/
+    padding-left: 80px;
+    
+    margin: 30px;
+    margin-right: 250px;
+    
+    line-height: 1.9em;
+    font-style: italic;
+    color:#444444;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    background-image: url(/Image/Lounge/background.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+#elixirs{
+    border:solid thin #007e7e;                  /*border-width affect only the border */
+    /*border-style: solid;
+    border-color: #007e7e; */             /*the is no property that specify the width of entire element, u specific them individually*/
+    
+    width:200px;                         /*width property lets you specify the width of the element’s content area only*/
+    
+        
+    padding-left: 20px;                     
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    margin-left:20px;
+
+    text-align:center;
+
+    background-image:url(/Image/Lounge/cocktail.gif);
+    background-repeat: repeat-x;
+
+    float: right;
+}
+
+#elixirs h2{
+    color: black;
+}
+
+#elixirs h3{
+    color: #d12c47;
+}
+
+#elixirs {
+    line-height: 1;
+}
+
+.cd {
+    font-style: italic;
+}
+
+.artist {
+    font-weight: bold;
+}
+
+#elixirs a:link {                       /* Using the pseudo-class with specific id "elixirs" will only affect the link with this id */
+    color: #007e7e;
+}
+
+#elixirs a:visted {
+    color:#333333;
+}
+
+#elixirs a:hover {
+    background: #f88396;
+    color: #0d5353;
+}
+
+a:link {                                /*By using the pseudo-class alone without any id, this will affect other link on the page*/
+    color:#007e7e;
+}
+
+a:visted {
+    color:#333333;
+}
+
+#footer{
+    font-size: 50%;
+    text-align:center;
+    line-height: normal;
+    margin-top: 30px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout of Web Page</title>
+        <style>
+            div#header{                                           /* "#" denoted id while "." denoted class */
+                border: 2px solid black;
+                /* height: 100px; */
+                width: 100%;
+                overflow:scroll;               
+            }                                                     /*When you overflow*/
+
+            div#body{ 
+                border: 2px solid black;
+               /* height: 600px;*/
+                width: 100%;
+            }
+
+            div#footer{ 
+                border: 2px solid black;
+                height: 100px;
+                width: 100%;
+            }
+
+            div{                                                  /*putiing the  margin inside a <div> without specifing the id */
+                margin-bottom: 20px;                     
+            }                                                         
+            
+            div#header ul{                                         /*use to remove the style (dot) from the list*/
+                list-style:none;                                  
+            }
+           
+            div#header ul li{
+               /* float: right;*/                                  /* This prevent the list from stacking rather making it to floar*/
+                display: inline-block;
+                padding-right: 5px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id = "header";>
+            <h4>Lesson</h4>
+            <div id="nav">                                          
+                <ul>                                                 <!--<ul> unstructure list: usually work with li-->            
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li> Contact</li>
+                    <li> Help</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="body";>
+            <p>This is the body</p>     
+        </div>
+
+        <div id = "footer">
+            <p>This is the footer</p>
+        </div>
+    </body>
+</html>

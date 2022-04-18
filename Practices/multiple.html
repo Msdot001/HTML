@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Multiple stylesheet layout</title>
+        <link href="corporate.css" rel="stylesheet">             <!--The last link can override the first(parent list), order is very essential-->
+        <link href="beverage-divisions.css" rel="stylesheet">
+        <link href="lounge-seattle.css" rel="stylesheet">
+        <link href = "lounge-mobile.css" rel="stylesheet" media="screen and (max-device-width:480px)"> 
+                                                                <!-- This allow to specify the media type to use this css-->
+        <link href="lounge-print.css" rel="stylesheet" media="print">   
+                                                                <!--This quries will only be used if the media type is printer-->
+    </head>
+
+    <body>
+
+    </body> 
+</html>
+
+<!--
+    1. you can add as many <link> tags to your HTML as necessary to cover all the devices you need to
+
+    *********Add media queries right into your CSS**********
+
+ NB: Instead of using <link> to target CSS to devices, it can be done in CSS file by using media queries:
+
+  i. Example : for screen less than 480px:
+  
+  @media screen and (max-device-width: 480px) {
+      #guarentee{
+          margin-right: 30px;
+      }
+  }
+
+ii. Example : for screen only wider than 480px:
+
+  @media screen and (min-device-width: 480px) {
+      #guarentee{
+          margin-right: 30px;
+      }
+  }
+
+iii. Example: for print
+
+  @media print{
+      body{
+         font-family: Times, "Times New Roman", serif; 
+      }
+  }
+
+
+  exercise: 
+<link href="smartphone.css" rel= "stylesheet" media ="screen and (max-device-width:640px)">
+
+<link href="Tablet_portrait.css" rel= "stylesheet" media ="screen and (max-device-width:1024px) and (orienatation:portraits)">
+
+<link href="Tablet_landscape.css" rel= "stylesheet" media ="screen and (max-device-width:1024px) and (orientation:landscape)">
+
+<link href="Desktop_PC.css" rel= "stylesheet" media ="screen and (max-device-width:1280px)">
+
+<link href="Internet_TV.css" rel= "stylesheet" media ="screen and (max-device-width:2650px)">
+
+-->
+
+

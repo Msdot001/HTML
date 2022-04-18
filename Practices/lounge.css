@@ -1,0 +1,33 @@
+                                               /*CSS contains simple statements, called rules*/
+body{                                          /*Each property declaration ends with a semicolon. */
+    font-family: sans-serif;                  /* text-align: Use this property to the left, center or right*/
+}                                             /* letter-spacing: This lets you sets the spacing between letters*/
+
+h1,h2 {                                       /*background-image: Use this property to put an image behind an element*/
+   color: grey;                             /*list-style: Use to change how list items look in a list*/
+}                                             /*font-style: Use for italic or oblique text*/
+                                              /*font-weight: Use to controls the weight of text. use it to make text bold*/
+h1{                                           /*padding:space between the edge of an element and its content */
+    border-bottom: 1px solid black;         /*top: control the position of the top of the element*/
+}
+                                                /*TEXT: i. font-family, ii. font-size, iii. color iv.font-weight v. text-decoration */
+p{
+    color:maroon;
+}
+
+blockquote.blue, p.blue{
+    color: blue;
+}
+
+blockquote.green, p.green{
+    color: green;
+}
+
+.purple{
+    color: purple;
+}
+
+.red{
+    color: red;
+}
+

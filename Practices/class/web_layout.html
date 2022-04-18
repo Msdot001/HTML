@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Web Page layout</title>
+        <style>
+            div#header{
+                background-color: darkviolet;
+                height: 200px;
+                width: 100%;
+                border: 2px solid black;
+                overflow: auto;
+            }
+
+            div#body{
+                background-color: dimgray;
+                height: 600px;
+                width:100%;
+                border: 2px solid black;
+            }
+
+            div#footer{
+                background-color: brown;
+                height:100px;
+                width: 100%;
+                border: 2px solid black;
+            }
+
+            div{
+                margin-bottom: 20px;
+            }
+
+            div#header ul{
+                list-style:none;
+            }
+
+            div#header ul li{
+                display: inline-block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id = "header";>
+           <ul>
+               <a href= "one.html"><li>HOME</li></a>|
+               <li>ABOUT US</li> |
+               <li> CONTACT</li> |
+               <li>HELP</li>
+           </ul>
+        </div>
+
+        <div id = "body";>
+            <ol>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Help</li>
+            </ol>
+        </div>
+
+        <div id = "footer";>
+            <p>
+                This section represent the footer part of the web page
+            </p>
+        </div>
+    </body>
+</html>
